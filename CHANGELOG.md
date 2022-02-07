@@ -2,6 +2,81 @@
 
 # Change Log
 
+# [6.3.15](https://github.com/framework7io/framework7/compare/v6.3.14...v6.3.15) (2022-01-19)
+
+### Bug Fixes
+
+- **progressbar:** tweaked styles for RTL ([6f6167c](https://github.com/framework7io/framework7/commit/6f6167cd7ed3c6380189bae82dbe99a235ea888a))
+
+# [6.3.14](https://github.com/framework7io/framework7/compare/v6.3.12...v6.3.14) (2021-12-30)
+
+### Bug Fixes
+
+- **vue:** fix `sortableMove` event arguments ([#3965](https://github.com/framework7io/framework7/issues/3965)) ([8e716f7](https://github.com/framework7io/framework7/commit/8e716f7a17dbf884493330224408405bd41f35fc))
+- **vue:** fix textEditor events arguments ([e6a3218](https://github.com/framework7io/framework7/commit/e6a3218c7a71d725e77e0bc92ccc35a086a92c6b))
+
+# [6.3.12](https://github.com/framework7io/framework7/compare/v6.3.11...v6.3.12) (2021-12-13)
+
+### Bug Fixes
+
+- **calendar:** remove `日` char from calendar days for Chinese locale ([5f595f2](https://github.com/framework7io/framework7/commit/5f595f26d8c2f97fc9fc2a3e84dd99a20377b8a8)), closes [#3960](https://github.com/framework7io/framework7/issues/3960)
+- **popup:** add `pointer-events: none` to `popup-behind` state ([246e737](https://github.com/framework7io/framework7/commit/246e737d188a5d7d0c266cc21ad9a75ad4e78e2b))
+- **range:** add missing type definitions ([#3961](https://github.com/framework7io/framework7/issues/3961)) ([d3bc1b4](https://github.com/framework7io/framework7/commit/d3bc1b4f703c1a236c66620ab54679a164bb4010))
+
+### Features
+
+- **tabbar:** allow tabbar to have highlight in iOS theme with extra `tabbar-highlight` class ([3a141ad](https://github.com/framework7io/framework7/commit/3a141ad8cb1c349623f50680e4c5930d52b3517c))
+
+# [6.3.11](https://github.com/framework7io/framework7/compare/v6.3.10...v6.3.11) (2021-12-08)
+
+### Bug Fixes
+
+- **sortable:** unify `sortableMove` arguments ([a17bd83](https://github.com/framework7io/framework7/commit/a17bd8346bb6b42012281d5142cdbb8f914366b9))
+
+# [6.3.10](https://github.com/framework7io/framework7/compare/v6.3.9...v6.3.10) (2021-12-08)
+
+### Bug Fixes
+
+- **vue:** fix `web-types` path ([6fe117a](https://github.com/framework7io/framework7/commit/6fe117abe9f8b0b1d44a0fb9f48d0869bd7613d5))
+
+### Features
+
+- **sortable:** new `sortableMove` event to trigger during sortable item drag ([ae055b2](https://github.com/framework7io/framework7/commit/ae055b20f11218e181771eaa807b1a9beb2e069c))
+
+# [6.3.9](https://github.com/framework7io/framework7/compare/v6.3.8...v6.3.9) (2021-11-18)
+
+### Bug Fixes
+
+- **preloader:** add `showIn` and `hideIn` to types ([e9d0db7](https://github.com/framework7io/framework7/commit/e9d0db713efee6951f02d90d41a69c065a7df93f)), closes [#3956](https://github.com/framework7io/framework7/issues/3956)
+
+# [6.3.8](https://github.com/framework7io/framework7/compare/v6.3.7...v6.3.8) (2021-11-08)
+
+### Bug Fixes
+
+- **react:** fix not working correctly change event with swipe ([9888e16](https://github.com/framework7io/framework7/commit/9888e167b38397c12311ae55cc276c57b79cd7fa))
+- **svelte:** method to get Smart Select instance in Link component ([558b629](https://github.com/framework7io/framework7/commit/558b629b46bb78ef065c2d4bc700bfd0e273ef06)), closes [#3954](https://github.com/framework7io/framework7/issues/3954)
+
+### Features
+
+- **vue:** add web-types for JetBrains editors ([f2bd8f9](https://github.com/framework7io/framework7/commit/f2bd8f9903252c49ddc5b81819e22f8dfaed488f))
+
+# [6.3.7](https://github.com/framework7io/framework7/compare/v6.3.6...v6.3.7) (2021-10-28)
+
+### Bug Fixes
+
+- **gauge:** fix update method types ([f1b75d5](https://github.com/framework7io/framework7/commit/f1b75d594d98e197f2060a2c9b5d14df517321b7)), closes [#3950](https://github.com/framework7io/framework7/issues/3950)
+- **searchbar:** searchByItem to use current `vl.items` ([68e4a09](https://github.com/framework7io/framework7/commit/68e4a0943494d379f4a8c0dfa0a5a535426df8f0)), closes [#3948](https://github.com/framework7io/framework7/issues/3948)
+
+### Features
+
+- **vue:** reactive `closeByBackdropClick`, `closeByOutsideClick` and `closeOnEscape` props in Sheet component ([db21896](https://github.com/framework7io/framework7/commit/db2189663951353d404d1c5f75c29fd6b408c860)), closes [#3949](https://github.com/framework7io/framework7/issues/3949)
+
+# [6.3.6](https://github.com/framework7io/framework7/compare/v6.3.5...v6.3.6) (2021-10-25)
+
+### Bug Fixes
+
+- **svelte:** fix swipe-to-step behavior in Sheet component ([6e0fa74](https://github.com/framework7io/framework7/commit/6e0fa7494997f6370f6f98b5744a9cfe401f7434))
+
 # [6.3.5](https://github.com/framework7io/framework7/compare/v6.3.4...v6.3.5) (2021-09-30)
 
 ### Bug Fixes
@@ -2710,7 +2785,7 @@
 - Actions
   - Fixed issue with error when pass already rendered HTML element to the `actions.create` constructor
   - Fixed issue with not setting actions button bg color
-  - Addedd support for `closeByOutsideClick` logic
+  - Added support for `closeByOutsideClick` logic
 - Searchbar
   - Now hides elements (when required) by setting/unsetting classes instead of directly modifying element `display` property
 - Toast
@@ -2960,7 +3035,7 @@
   - `pushState` now supports for multiple Views at a time
   - Router component's context now can be extended with `options.context` route parameter
   - Router component now supports inline nested `<template>` that won't be parsed by Template7
-  - Addded support for dynamic routes
+  - Added support for dynamic routes
   - Route events, now it is possible to specify `on` object with page events on route object
 - PhotoBrowser
   - Now uses Virtual Slides by default
